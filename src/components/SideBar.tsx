@@ -1,4 +1,3 @@
-import React from 'react'
 import Modulo from './sidebar/modulo'
 import inicio from '../assets/inicio.png'
 import ordenes from '../assets/orden.png'

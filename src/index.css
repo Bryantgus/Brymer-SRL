@@ -1,6 +1,15 @@
+@theme {
+  --breakpoint-d: 1335px
+}
 @import "tailwindcss";
+
+
 
 html {
   font-family: "Nunito Sans", sans-serif;
 }
+
+/* * {
+  color: #535353
+} */
 

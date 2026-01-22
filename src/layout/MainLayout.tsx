@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import SideBar from "../components/SideBar";
-import useScreenDimensions from '../../utils/useScreenDimensions'
+// import useScreenDimensions from '../../utils/useScreenDimensions'
 
 export default function DashboardLayout() {
-  const { width, height } = useScreenDimensions();
+  // const { width, height } = useScreenDimensions();
   return (
     <div className="flex flex-col h-screen w-full">
       {/* <div>
-        <p>Ancho: {width}px</p>
+        <p className="font-bold text-[100px] d:text-[20px]">
+          Ancho: {width}px
+        </p>
         <p>Alto: {height}px</p>
       </div> */}
       {/* Contenedor del Header con altura fija */}
@@ -17,7 +19,7 @@ export default function DashboardLayout() {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <aside className="w-[8%] 2xl:w-[10%]">
+        <aside className="w-[8%] d:w-[10%]">
           <SideBar />
         </aside>
 
