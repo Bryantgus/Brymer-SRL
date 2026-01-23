@@ -11,10 +11,10 @@ interface Filter {
 
 }
 
-const useFilter = create<Filter>((set, get) => ({
+const useFilter = create<Filter>((set) => ({
   verOrdenes: verOrdenes,
   busqueda: '',
-  estado: 'Abonado',
+  estado: 'Todos',
 
   setBusqueda: (label) => {
     set(() => ({

@@ -18,13 +18,13 @@ export default function VerOrdenes() {
   }, [allOrdenes, busqueda, estado]);
 
   const ver_editar = (id: number, opcion: string) => {
-    // console.log(id, opcion);
+    console.log(id, opcion);
     return
   }
   return (
 
     <div className="p-5">
-      <h2 className="text-4xl font-semibold">Ordenes {'->'} Ver Ordenes</h2>
+      <h2 className="text-3xl font-semibold">Ordenes {'->'} Ver Ordenes</h2>
 
       <Filters />
       <div className="mt-3"></div>

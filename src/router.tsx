@@ -9,7 +9,7 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/ordenes/ver-ordenes" replace />} />
+        <Route path="/" element={<Navigate to="/ordenes/crear-editar-orden" replace />} />
         <Route element={<MainLayout />}>
           
           <Route path="inicio">
