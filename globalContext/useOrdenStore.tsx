@@ -7,9 +7,9 @@ export interface InfoCliente {
   cedulaRnc: number
 }
 
-interface VentanaObj {
+export interface VentanaObj {
   p65?: Ventana[]
-  trad?: Ventana[]
+  tradicional?: Ventana[]
   p92?: Ventana[]
 }
 export interface Orden {
@@ -30,7 +30,7 @@ export const useOrdenStore = create<Orden>((set) => ({
   productosAgregados: ['Ventana'],
   ventanas: {
     p65: [],
-    trad: [],
+    tradicional: [],
     p92: []
   },
   currentProductEdit: null,
@@ -57,6 +57,7 @@ export const useOrdenStore = create<Orden>((set) => ({
       [key]: value         
     }
   })),
+  
   updateVentana: (tipo, id, newData) =>
     set((state) => ({
       ventanas: {

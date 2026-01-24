@@ -8,6 +8,7 @@ type VentanaCaracteristicas = {
 
 export type Ventana = {
   id: number
+  etiqueta: string
   ancho: string
   alto: string
   caracteristicas: VentanaCaracteristicas

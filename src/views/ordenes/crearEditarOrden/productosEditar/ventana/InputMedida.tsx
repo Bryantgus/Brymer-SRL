@@ -1,13 +1,19 @@
 type Props = {
   label: string
-  id: number
+  input: string
+  changeInput: (label: string, input: string) =>  void
 }
 
-export default function InputMedida({id, label}: Props) {
+export default function InputMedida({label, input, changeInput}: Props) {
+  
   return (
-    <div className="">
+    <div className="rounded-xl p-2 mt-2">
       <p className="font-semibold">{label}</p>
-      <input type="text" className="" />
+      <input 
+      onChange={() => changeInput(label, input)}
+      value={input} 
+      type={label === 'Etiqueta' ? 'text' : 'number'} 
+      className="text-center font-semibold text-xl border-2 border-[#D4E2F0] rounded-xl w-30 h-10" />
     </div>
   )
 }

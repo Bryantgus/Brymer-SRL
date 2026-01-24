@@ -1,4 +1,4 @@
-import InputInfo from "./inputInfo";
+import InputInfo from "./InputInfo";
 
 export default function InfoClient() {
 
